@@ -4,11 +4,6 @@ N = 5 -> "5, 4, 3, 2, 1"
 N = 8 -> "8, 7, 6, 5, 4, 3, 2, 1"
 */
 
-Console.WriteLine("Введите N");
-int number = Convert.ToInt32(Console.ReadLine());
-
-PrintNumbersToN(number);
-
 void PrintNumbersToN(int n)
 {
     if (n < 1) return;
@@ -16,3 +11,7 @@ void PrintNumbersToN(int n)
     Console.Write($"{n} ");
     PrintNumbersToN(n - 1);
 }
+
+Console.WriteLine("Введите N");
+int number = Convert.ToInt32(Console.ReadLine());
+PrintNumbersToN(number);
